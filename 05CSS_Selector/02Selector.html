@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 자식 선택자 */
+        .parent>div{
+            border: 1px solid gray;
+        }
+        .parent>div>div{
+            font-size: 0.8rem;
+            color: brown;
+        }
+        .parent>p{
+            background-color: orange;
+        }
+
+        /* 자손 선택자 */
+        .parent div{
+            width: 200px;
+            background-color: rgb(66, 74, 99);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="child">
+            <div>1 레스큐 캣 일반 소환</div>
+            <div>2 레스큐 캣 효과 발동, 덱에서 키트, 케라스 서치 후 특수 소환</div>
+            <div>3 키트, 케라스를 소재로 페리지트 링크 소환</div>
+        </div>
+        <div>4 키트 덤핑 효과로 너벨 덤핑, 너벨 효과로 프랙탈 덱에서 서치</div>
+        <p>5 페리지트 효과 발동, 패의 프랙탈 특수 소환</p>
+    </div>
+
+</body>
+
+</html>

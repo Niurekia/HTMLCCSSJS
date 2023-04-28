@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 20px;
+        }
+        .c1{
+            border: 1px solid red;
+        }
+
+        .c2{
+            border: 1px solid orange;
+        }
+        .c3{
+            border: 1px solid green;
+        }
+
+        /* ~ : 동위 선택자, 같은 Depth의 모슨 선택자 */
+        /* + : 동쉬 선택자, 같은 Depth의 하위 1개 선택자 */
+
+        .c1>p{
+            background-color: aquamarine;
+        }
+        .c2~p{
+            color: blue;
+        }
+        .c2+p{
+            font-size: 0.5rem;
+        }
+
+        /* .c2의 하위 모든 p태그 */
+        .c2 p{
+            color: blueviolet;
+        }
+
+        .c2>p{
+            background-color: beige;
+        }
+
+        .c3~p{
+            width: 250px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="c1">
+        <p>1 레스큐 캣 일반 소환</p>
+        <div class="c2">
+            <p>2 레스큐 캣 효과 발동, 덱에서 키트, 케라스 서치 후 특수 소환</p>
+            <div class="c3">
+                <p>3 키트, 케라스를 소재로 페리지트 링크 소환</p>
+                <p>4 키트 덤핑 효과로 너벨 덤핑</p>
+                <p>5 너벨 덤핑 효과로 프랙탈 덱에서 서치</p>
+            </div>
+            <p>6 페리지트 효과 발동, 패의 프랙탈 특수 소환</p>
+            <p>7 프랙탈의 효과 발동, 키트, 너벨, 케라스, 레스큐캣을 제외하고 슈라이그 특수 소환</p>
+        </div>
+        <p>8 슈라이그 소환 유발 효과로 상대 카드 비대상 지정 제외</p>
+        <p>9 슈라이그, 페리지트로 베어블룸 링크 소환</p>
+    </div>
+</body>
+
+</html>

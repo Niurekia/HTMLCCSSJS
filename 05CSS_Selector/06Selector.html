@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+        ::before :contents 영역 앞에 표시할 스타일
+        ::after :contents 영역 뒤에 표시할 스타일
+        */
+        .d1 {
+            width: 400px;
+            height: 200px;
+            background-color: orange;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .d1::before {
+            content: "";
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-color: rosybrown;
+            background-image: url('./image/male.svg');
+            background-size: 100%;
+            border: 1px solid gray;
+        }
+
+        .d1::after {
+            content: "";
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-color: royalblue;
+            background-image: url('./image/female.svg');
+            background-size: 100%;
+            border: 1px solid gray;
+        }
+
+        .d2{
+
+        }
+
+        .d2>ul{
+            list-style: none;
+            padding: 0px;
+        }
+
+        .d2>ul>li{
+            width: 200px;
+            height: 35px;
+            border: 1px solid gray;
+            line-height: 35px; text-align: center;
+        }
+
+        .d2>ul>li>a{
+            display: block;
+            text-decoration: none;
+        }
+
+        .d2>ul>li>::before{
+            content:'🟣💜';
+
+            /* background-image: url('./image/male.svg');
+            width: 20px; height: 20px;
+            display: inline-block;
+            background-size: 100%; */
+            position: relative;
+        }
+
+        .d2>ul>li>a::after{
+            content:'💜🟣'
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="d1">ㅎㅇ</div>
+    <hr />
+
+    <div class="d2">
+        <ul>
+            <li><a href="">Menu1</a></li>
+            <li><a href="">Menu2</a></li>
+            <li><a href="">Menu3</a></li>
+            <li><a href="">Menu4</a></li>
+        </ul>
+
+    </div>
+
+
+</body>
+
+</html>

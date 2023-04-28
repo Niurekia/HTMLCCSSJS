@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            /* box-sizing: border-box; */
+            
+        }
+
+        body {}
+
+        ul {
+            list-style: none;
+            padding: 0;
+            color: black;
+
+        }
+
+        .d1 {
+            width: 150px;
+
+            text-align: center;
+            border: 3px solid black;
+
+        }
+
+        .d1>li {
+            position: relative;
+            /* border: 3px solid black; */
+        }
+
+        .d1>li>a {
+            display: block;
+            background-color: pink;
+        }
+
+        .d1>li:hover .d2 {
+            display: block;
+        }
+
+
+        .d2 {
+            
+            display: none;
+        }
+
+        .d1>li>.d2 {
+
+            position: relative;
+            width: 150px;
+        }
+
+        .d1>li>.d2>li {
+            border-top: 3px solid black;
+            
+        }
+
+        .d1>li>.d2>li>a {
+            width: 100%;
+            left: 150px;
+            display: block;
+            background-color: rgb(220,100,100);
+        }
+
+
+
+        .d1>li>.d2>li>.d3 {
+            display: none;
+            
+        }
+
+        .d1>li>.d2>li>.d3>li{
+            border-top: 3px solid black;
+            border-right: 3px solid black;
+            border-left: 3px solid black;
+        }
+
+        .d1>li>.d2>li>.d3>li:last-child {            
+            border-bottom: 3px solid black;  
+        }
+        
+
+
+
+        .d1>li>.d2>li:hover .d3 {
+            position: absolute;            
+            width: 100%;
+            top: 0;
+            left: 150px;            
+            background-color: rgb(110,200,150);  
+            display: block;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <ul class="d1">
+
+        <li>
+            <a href="">상</a>
+            <ul class="d2">
+                <li>
+                    <a href="">중1</a>
+                    <ul class="d3">
+
+                        <li><a href="">하1</a></li>
+                        <li><a href="">하2</a></li>
+                        <li><a href="">하3</a></li>
+                        <li><a href="">하4</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+            <ul class="d2">
+                <li>
+                    <a href="">중2</a>
+                    <ul class="d3">
+
+                        <li><a href="">하5</a></li>
+                        <li><a href="">하6</a></li>
+                        <li><a href="">하7</a></li>
+                        <li><a href="">하8</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+            <ul class="d2">
+                <li>
+                    <a href="">중3</a>
+                    <ul class="d3">
+
+                        <li><a href="">하9</a></li>
+                        <li><a href="">하10</a></li>
+                        <li><a href="">하11</a></li>
+                        <li><a href="">하12</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>

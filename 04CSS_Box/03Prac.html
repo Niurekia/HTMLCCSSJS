@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0px;
+        }
+        div {
+            background-color: orange;
+            height: 100px;
+            margin: 5px;
+        }
+
+        .d1 {
+            font-size: 3rem;/* 글자 크기 root를 기준으로 3배수*/
+            color: white;/* 글자 색상 white*/
+            letter-spacing: 30px;/* 글자 간격 30px*/
+            text-align: center;/* 글자 수평 중앙배치*/
+            line-height: 100px;/* 글자 수직 중앙배치*/
+
+        }
+
+        .d2 {
+            font-size: 2em;/* 글자 크기 상위태그를 기준으로 2배수*/
+            color: green;/* 글자 색상 green*/
+            text-align: center;/* 글자 수평 중앙배치*/
+            line-height: 200px;/* 글자 수직 중앙배치*/
+            width: 300px;/* 가로 너비 300px*/
+            height: 200px;/* 세로 너비 200px*/
+            margin: 0 auto/* d2 클래스 태그는 브라우저 가로 중앙 배치*/
+        }
+
+        .d3 {
+            width: 300px;/* 가로 너비 300*/
+            height: 300px;/* 세로 너비 300*/
+            margin-top: 50px;/* d2태그와의 거리를 50px로 설정*/
+            padding: 30px;/* content와의 거리 30px */
+        }
+    </style>
+</head>
+
+<body>
+    <div style="font-size: 10px;">
+        <div class="d1">1번</div>
+        <div class="d2">2번</div>
+        <div class="d3" style="font-size: 20px;">3번</div>
+    </div>
+</body>
+
+</html>

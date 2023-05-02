@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 5px;
+            text-align: center;
+        }
+
+        .wrapper {
+            border: 1px solid black;
+            width: 95%;
+        }
+
+
+        .wrapper>.menu {
+            border: 1px solid black;
+            height: 50px;
+            display: flex;
+            justify-content: stretch;
+            align-content: center;
+
+        }
+
+        .wrapper>.menu>.logo {
+
+            width: 100px;
+            border: 1px solid red;
+            line-height: 35px;
+            justify-content: left;
+        }
+
+        .wrapper>.menu>.space {
+            flex-grow: 1;            
+        }
+
+        .wrapper>.menu>.menu2{
+            width: 300px;
+            border: 1px solid black;
+            justify-content: right;
+            display: flex;
+        }
+        .wrapper>.menu>.menu2>.sub {
+            border: 1px solid red;
+            width: 50px;
+            flex-grow: 1;
+            flex-basis: 1px;
+        }
+
+
+
+        .wrapper>.parent {
+
+
+
+            display: flex;
+            align-content: stretch;
+            flex-wrap: wrap;
+            border: 5px solid black;
+
+        }
+
+        .wrapper>.parent>.child {
+            justify-content: space-around;
+            border: 1px solid red;
+            line-height: 50px;
+        }
+
+        .wrapper>.parent>.child:nth-child(1) {
+            flex-grow: 1;
+            height: 50px;
+            flex-basis: 100px;
+        }
+
+        .wrapper>.parent>.child:nth-child(2) {
+            flex-grow: 1;
+            height: 50px;
+            flex-basis: 100px;
+        }
+
+        .wrapper>.parent>.child:nth-child(3) {
+            flex-grow: 1;
+            height: 50px;
+            flex-basis: 100px;
+        }
+
+        .wrapper>.parent>.child:nth-child(4) {
+            flex-grow: 1;
+            height: 50px;
+            flex-basis: 100px;
+        }
+
+        .wrapper>.parent>.child:nth-child(5) {
+            flex-grow: 1;
+            height: 50px;
+            flex-basis: 100px;
+        }
+
+        .wrapper>.parent>.child:nth-child(6) {
+            flex-grow: 1;
+            height: 50px;
+            flex-basis: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <div class="menu">
+            <div class="logo">Logo</div>
+            <div class="space"></div>
+            <div class="menu2">
+                <div class="sub">sub1</div>
+                <div class="sub">sub2</div>
+                <div class="sub">sub3</div>
+                <div class="sub">sub4</div>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="child">Menu1</div>
+            <div class="child">Menu2</div>
+            <div class="child">Menu3</div>
+            <div class="child">Menu4</div>
+            <div class="child">Menu5</div>
+            <div class="child">Menu6</div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

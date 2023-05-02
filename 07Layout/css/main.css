@@ -1,0 +1,86 @@
+/* 메인 */
+.wrapper {
+    width: 1600px;
+    /* height: 1200px; */
+    border: 1px solid gray;
+    margin: 0 auto;
+}
+
+.wrapper>main {
+    border: 1px solid gray;
+    /* height: 600px; */
+}
+
+.wrapper>main>section {
+    border: 1px solid red;
+}
+
+.wrapper>main>section:nth-child(1) {
+    height: 400px;
+    display: flex;
+}
+
+.wrapper>main>section:nth-child(1)>aside {
+    border: 1px solid gray;
+    width: 300px;
+}
+
+.wrapper>main>section:nth-child(1)>article {
+    border: 1px solid gray;
+    flex-grow: 1;
+}
+
+.wrapper>main>section:nth-child(2) {
+    height: 500px;
+    display: flex;
+}
+
+.wrapper>main>section:nth-child(2)>aside:nth-child(1) {
+    border: 1px solid blue;
+    width: 300px;
+    background-color: beige;
+}
+
+.wrapper>main>section:nth-child(2)>article {
+    border: 1px solid blue;
+    flex-grow: 1;
+    background-color: bisque;
+}
+
+.wrapper>main>section:nth-child(2)>aside:nth-child(3) {
+    border: 1px solid blue;
+    width: 300px;
+    background-color: beige;
+}
+
+.wrapper>main>section:nth-child(3) {
+    height: 400px;
+}
+
+.wrapper>main>section:nth-child(3)>article {
+    border: 1px solid green;
+    height: 100px;
+}
+
+.wrapper>main>section:nth-child(3)>div {
+    display: flex;
+    height: 300px;
+}
+
+.wrapper>main>section:nth-child(3)>div>aside:nth-child(1) {
+    border: 1px solid green;
+    width: 300px;
+    background-color: aqua;
+}
+
+.wrapper>main>section:nth-child(3)>div>article:nth-child(2) {
+    border: 1px solid green;
+    flex-grow: 1;
+    background-color: aquamarine;
+}
+
+.wrapper>main>section:nth-child(3)>div>aside:nth-child(3) {
+    border: 1px solid green;
+    width: 300px;
+    background-color: aqua;
+}

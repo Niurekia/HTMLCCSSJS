@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            position: relative;
+        }
+
+        .animation-test {
+
+            position: relative;
+            top: 100px;
+            left: 30%;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .animation-test>div {
+            width: 400px;
+            height: 40px;
+            background-color: springgreen;
+            color: red;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid black;
+        }
+
+        .animation-test>.d1 {
+            animation-name: moving1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .animation-test>.d2 {
+            animation-name: moving2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .animation-test>.d3 {
+            animation-name: moving3;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        
+
+        @keyframes moving1 {
+            from {
+                top: 1000px
+            }
+
+            to {
+                top: 0;
+            }
+
+            0% {
+                transform: rotate(0deg)
+            }
+
+
+
+            100% {
+                transform: rotate(14400deg);
+            }
+
+        }
+
+        @keyframes moving2 {
+            from {
+                left: 1000px;
+            }
+
+            to {
+                left: 0;
+            }
+
+            0% {
+                transform: rotate(-0deg)
+            }
+
+
+            100% {
+                transform: rotate(-14400deg);
+            }
+        }
+
+        @keyframes moving3 {
+            from {
+                left: 1000px;
+                top: 1000px;
+            }
+
+            to {
+                left: 0;
+                top: 0;
+            }
+
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(14400deg);
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="animation-test">
+        <div class="d1">(❁´◡`❁)</div>
+        <div class="d2">(●'◡'●)</div>
+        <div class="d3">༼ つ ◕_◕ ༽つ</div>
+        
+    </div>
+</body>
+
+</html>

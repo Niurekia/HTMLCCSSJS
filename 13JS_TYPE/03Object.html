@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="poppi.sound();">짖어!</button><br/>
+    <button onclick="poppi.toString();">확인</button><br/>
+    <button onclick="myCar.accel();">액셀</button><br/>
+    <button onclick="myCar.showInfo();">차정보</button><br/>
+
+
+    <script>
+
+        const poppi={
+            //속성
+            name:"빠삐",
+            kind:"포메라니안",
+            age:1,
+
+            //기능
+            sound:function(){
+                alert(this.name+" 이(가) 짖습니다!");
+            },
+
+            toString:function(){
+                alert("이름 : "+this.name+"\n나이 : "+this.age+"\n견종 : "+this.kind)
+            }
+
+        }
+        
+        /*
+        다음  Object를 만들어서 화면에 출력합니다
+        object명:myCar
+        속성:값
+        owner:"소유자",category:"차종",fuelkind:"가솔린/디젤/LPG",speed:"현재속도"
+        기능
+        accel:액셀을 밟습니다 출력(alert)
+        showInfo:속성정보 모두 출력(alert)
+        */
+
+        const myCar={
+            //속성
+            owner:"알빠노",//소유자
+            category:"트럭",//차종
+            fuelkind:"가솔린",//가솔린/디젤/LPG
+            speed:"73km/h",//현재속도
+
+            //기능
+            accel:function(){
+                alert("액셀을 밟습니다");
+            },
+            showInfo:function(){
+                alert("소유자: "+owner+"\n차종: "+category+"\n연료: "+fuelkind+"\n현재 속도: "+speed);
+            }
+        }
+        
+
+
+    </script>
+    
+</body>
+</html>

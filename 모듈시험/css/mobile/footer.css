@@ -1,25 +1,29 @@
-.wrapper>footer{
+input{
+    display: none;
+}
+b{
+    display: none;
 
 }
-
-.wrapper>footer>.footer-top{
-
+img{
+    padding: 0;
 }
-.wrapper>footer>.footer-top>ul{
+.wrapper>footer>.footer-body{
+    
+}
+.wrapper>footer>.footer-body>ul{
    
 }
-.wrapper>footer>.footer-top>ul>li{
-;
 
-}
-.wrapper>footer>.footer-top>ul>li>a{
- 
-}
-
-.wrapper>footer>.footer-body{
-
+.wrapper>footer>.footer-body>ul>li>{
+    display: flex;
+    /* align-content: center; */
+    justify-content: center;
 }
 
-.wrapper>footer>.footer-bottom{
-  
+ .wrapper>footer>.footer-body>ul>li>img{
+    display: inline-block;
+    align-items: center;
+    line-height: 100px;
+    margin-top: 20px;
 }

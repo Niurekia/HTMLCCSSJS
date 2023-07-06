@@ -1,19 +1,17 @@
-.wrapper>footer {
-
+.wrapper>footer{
     width: 100%;
     position: fixed;
     left: 0;
     bottom: 0px;
 }
 
-.wrapper>footer>.footer-top {
-    
+.wrapper>footer>.menusearch{
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
 }
 
-.wrapper>footer>.footer-top>.search {
+.wrapper>footer>.menusearch>.search{
     position: relative;
     border: 1px solid darkgray;
     width: 60%;
@@ -23,68 +21,73 @@
 
 
 
-.wrapper>footer>.footer-top>.search>input {
+.wrapper>footer>.menusearch>.search>input{
     position: absolute;
     height: 50px;
-    width: 300px;
+    width: 200px;
     border: 0;
     outline: 0;
     left: 50px;
     top: 0;
     bottom: 0;
-    
+
 }
 
-.wrapper>footer>.footer-top>.search>img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-}
 
-.wrapper>footer>.footer-top>.search>input:focus+img {
+
+.wrapper>footer>.menusearch>.search>input:focus+img{
     display: none;
 }
 
-
-
-
-.wrapper>footer>.footer-body>ul {
-    background-color: white;
-
-    display: flex;
-    height: 125px;
-
-
+.wrapper>footer>.menusearch>.search>input:focus::placeholder{
+    color: transparent;
 }
 
-.wrapper>footer>.footer-body>ul>li {
-    display: block;
-    border: 1px solid black;
+.wrapper>footer>.footer-body>ul{
+    background-color: white;
+    display: flex;
+    height: 100px;
+}
 
+.wrapper>footer>.footer-body>ul>li{
+    display: block;
+    border-top: 1px solid black;
     text-align: center;
-    line-height: 125px;
+    line-height: 100px;
     align-content: stretch;
     justify-content: space-around;
-
 }
 
-.wrapper>footer>.footer-body>ul>li:nth-child(1) {
+.wrapper>footer>.footer-body>ul>li:nth-child(1){
     flex-grow: 1;
-
+    flex-shrink: 1;
+    border-right: 1px solid darkgray;
 }
 
-.wrapper>footer>.footer-body>ul>li:nth-child(2) {
+.wrapper>footer>.footer-body>ul>li:nth-child(2){
     flex-grow: 1;
-
+    flex-shrink: 1;
+    border-right: 1px solid darkgray;
 }
 
-.wrapper>footer>.footer-body>ul>li:nth-child(3) {
-
+.wrapper>footer>.footer-body>ul>li:nth-child(3){
     flex-grow: 1;
+    flex-shrink: 1;
+    border-right: 1px solid darkgray;
 }
 
-.wrapper>footer>.footer-body>ul>li:nth-child(4) {
+.wrapper>footer>.footer-body>ul>li:nth-child(4){
 
     flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.wrapper>footer>.footer-body>ul>li>a{
+    font-size: 1.2em;
+    font-weight: 1500;
+    color: black;
+}
+
+.wrapper>footer>.footer-body>ul>li>img{
+    display: none;
 }

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <button onclick="start()">Start</button><Button onclick="stop()">Stop</Button>
     <div class="box">
 
@@ -14,18 +16,19 @@
 
     <script>
 
-        const boxEl=document.querySelector('.box');
+        const boxEl = document.querySelector('.box');
 
-        let currentProcess=null;
+        let currentProcess = null;
 
-        function start(){
-            currentProcess=setInterval(()=>{boxEl.innerHTML+="Batch Process...<br/>"},1000);
-            
+        function start() {
+            currentProcess = setInterval(() => { boxEl.innerHTML += "Batch Process...<br/>" }, 100);
+
         }
 
-        function stop(){
+        function stop() {
             clearInterval(currentProcess);
         }
     </script>
 </body>
+
 </html>

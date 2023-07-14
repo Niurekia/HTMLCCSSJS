@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <style>
+        .wrapper {}
+
+        .wrapper>.first_section .swiper {
+            width: 600px;
+            height: 200px;
+            border: 1px solid;
+        }
+
+        .wrapper>.second_section .swiper {
+            width: 90%;
+            height: 500px;
+            border: 1px solid;
+        }
+
+        .wrapper>.second_section .swiper>.swiper-wrapper {}
+
+        .wrapper>.second_section .swiper>.swiper-wrapper>.swiper-slide {
+            text-align: center;
+            line-height: 500px;
+            font-size: 86px;
+        }
+        .wrapper>.second_section .swiper .swiper-pagination-bullet-active{
+            background-color: red;
+            width: 15px;
+            height: 15px;
+            transition: 0.5s;
+        }
+        .wrapper>.third_section .swiper{
+            width: 80%;
+            height: 300px;
+            margin-top: 50px;
+            border: 1px solid;
+        }
+        .wrapper>.third_section .swiper img{
+            width: 200px;
+            height: 250px;
+            border: 1px solid;
+        }
+
+        .wrapper>.third_section .swiper>.swiper-slide {
+            display: flex;
+            justify-content: center;
+            border: 1px solid ;
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <section class="first_section">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">0</div>
+                    <div class="swiper-slide">1</div>
+                    <div class="swiper-slide">2</div>
+                    <div class="swiper-slide">3</div>
+                    <div class="swiper-slide">4</div>
+                    <div class="swiper-slide">5</div>
+                    <div class="swiper-slide">6</div>
+                    <div class="swiper-slide">7</div>
+                    <div class="swiper-slide">8</div>
+                    <div class="swiper-slide">9</div>
+                    
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="second_section">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">1</div>
+                    <div class="swiper-slide">2</div>
+                    <div class="swiper-slide">3</div>
+                    <div class="swiper-slide">4</div>
+                    <div class="swiper-slide">5</div>
+                    <div class="swiper-slide">6</div>
+                    <div class="swiper-slide">7</div>
+                    <div class="swiper-slide">8</div>
+                    <div class="swiper-slide">9</div>
+                   
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+
+        <section class="third_section">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="">1</div>
+                    <div class="swiper-slide"><img src="">2</div>
+                    <div class="swiper-slide"><img src="">3</div>
+                    <div class="swiper-slide"><img src="">4</div>
+                    <div class="swiper-slide"><img src="">5</div>
+                    <div class="swiper-slide"><img src="">6</div>
+                    <div class="swiper-slide"><img src="">7</div>
+                    <div class="swiper-slide"><img src="">8</div>
+                    <div class="swiper-slide"><img src="">9</div>
+                    
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+
+        <section></section>
+
+    </div>
+
+    <script>
+        const swiper_vertical = new Swiper(".first_section .swiper", {
+            // Optional parameters
+            direction: 'vertical',
+            autoplay: {
+                delay: 1
+            },
+            loop: true,
+            speed: 1
+        });
+
+        const swiper_banner = new Swiper('.second_section .swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction:false,
+            },
+            loop: true,
+            speed: 1000,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: 'true',
+                type: 'bullets',//progressbar,fraction,bullets
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            mousewheel: true,
+            // effect: 'fade',
+        });
+
+        const swiper_multi_slider = new Swiper(".third_section .swiper", {
+            // Optional parameters
+            direction: 'horizontal',
+            autoplay: {
+                delay: 1
+            },
+            loop: true,
+            speed: 1,
+            slidesPerView:4,
+            centerdSlides:true,
+        });
+        
+    </script>
+
+</body>
+
+</html>

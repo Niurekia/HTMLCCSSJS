@@ -97,9 +97,6 @@
 
         async function sub_process_func() {
 
-
-            
-
             await Sub_process_exec(1)
                 .then((result) => {
                     console.log("성공", result)
@@ -115,10 +112,8 @@
                 })//성공시 수행로직
                 .catch((error) => { console.log("예외", error) })//실패시 수행로직
 
-                
-
-                
         }
+        
         sub_process_func();
 
 
